@@ -24,8 +24,8 @@ import re
 @dataclass(frozen=True)
 class DCYNResult:
     field_name: str
-    answer: bool          # True = Yes (valid/compliant), False = No
-    reason: str           # Always populated — no silent Yes/No
+    answer: bool  # True = Yes (valid/compliant), False = No
+    reason: str  # Always populated — no silent Yes/No
 
 
 def check_full_name(value: str, field_name: str = "full_name") -> DCYNResult:

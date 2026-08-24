@@ -56,7 +56,11 @@ class StudentOnboardingSerializer(serializers.Serializer):
         """Structural age gate — mirrors the DCYN age check so the API
         layer and the audit layer can never silently disagree."""
         today = date.today()
-        age = today.year - value.year - ((today.month, today.day) < (value.month, value.day))
+        age = (
+            today.year
+            - value.year
+            - ((today.month, today.day) < (value.month, value.day))
+        )
         if not (3 <= age <= 18):
             raise serializers.ValidationError(
                 f"Student age ({age}) is outside the supported range of 3 to 18 years."
