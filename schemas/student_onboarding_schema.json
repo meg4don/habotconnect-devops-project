@@ -1,0 +1,15 @@
+[
+  {"name": "student_full_name", "type": "STRING", "mode": "REQUIRED", "description": "Full legal name of the student, as provided by the guardian during onboarding."},
+  {"name": "date_of_birth", "type": "DATE", "mode": "REQUIRED", "description": "Student date of birth, used to confirm eligibility for the supported age range."},
+  {"name": "has_diagnosed_learning_difficulty", "type": "BOOLEAN", "mode": "REQUIRED", "description": "True if the student has a formally diagnosed learning difficulty on file."},
+  {"name": "requires_one_on_one_support", "type": "BOOLEAN", "mode": "REQUIRED", "description": "True if the student requires a dedicated one-on-one Learning Support Assistant."},
+  {"name": "guardian_full_name", "type": "STRING", "mode": "REQUIRED", "description": "Full legal name of the parent or guardian submitting the onboarding form."},
+  {"name": "guardian_email", "type": "STRING", "mode": "REQUIRED", "description": "Email address of the parent or guardian, used for account and communication purposes."},
+  {"name": "guardian_phone_number", "type": "STRING", "mode": "REQUIRED", "description": "Phone number of the parent or guardian in E.164 international format."},
+  {"name": "preferred_session_language", "type": "STRING", "mode": "REQUIRED", "description": "Language the family prefers for Learning Support Assistant sessions."},
+  {"name": "consent_to_data_processing", "type": "BOOLEAN", "mode": "REQUIRED", "description": "True if the guardian has explicitly consented to data processing, required to complete onboarding."},
+  {"name": "emergency_contact_provided", "type": "BOOLEAN", "mode": "REQUIRED", "description": "True if a valid emergency contact has been provided for the student."},
+  {"name": "session_frequency_per_week", "type": "INTEGER", "mode": "REQUIRED", "description": "Number of Learning Support Assistant sessions requested per week, between one and five."},
+  {"name": "region", "type": "STRING", "mode": "REQUIRED", "description": "Geographic region used by the Row-Level Security policy to scope analytics reader access."},
+  {"name": "ingestion_timestamp", "type": "TIMESTAMP", "mode": "REQUIRED", "description": "Timestamp at which the record was written into the staged and enforced dataset."}
+]

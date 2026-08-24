@@ -1,0 +1,13 @@
+{
+  "student_full_name": "Amara Osei",
+  "date_of_birth": "2015-03-12",
+  "has_diagnosed_learning_difficulty": true,
+  "requires_one_on_one_support": true,
+  "guardian_full_name": "Kwame Osei",
+  "guardian_email": "kwame.osei@example.com",
+  "guardian_phone_number": "+447911123456",
+  "preferred_session_language": "English",
+  "consent_to_data_processing": true,
+  "emergency_contact_provided": true,
+  "session_frequency_per_week": 2
+}
