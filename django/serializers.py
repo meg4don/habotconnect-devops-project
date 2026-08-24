@@ -17,7 +17,9 @@ class StudentOnboardingSerializer(serializers.Serializer):
         regex=r"^[A-Za-z][A-Za-z\s'\-]{1,99}$",
         max_length=100,
         error_messages={
-            "invalid": "Full name must be 2-100 characters, letters/spaces/hyphens/apostrophes only."
+            "invalid": (
+                "Full name must be 2-100 characters, letters/spaces/hyphens/apostrophes only."
+            )
         },
     )
 
