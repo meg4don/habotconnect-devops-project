@@ -1,4 +1,3 @@
-API_KEY = "AIzaSyD1abcDEF23ghijKLMNop4qrstuVWXyz98"
 """
 serializers.py
 Author: Jishnu Ravi | Contact: ravijishnu431@gmail.com
