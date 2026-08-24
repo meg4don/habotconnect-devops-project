@@ -41,10 +41,10 @@ jobs:
         run: pip install black==24.4.2 flake8==7.0.0
 
       - name: Run Black (formatting check — fails on any diff)
-        run: black --check --diff .
+        run: black --check --diff . --exclude "venv|\.venv"
 
       - name: Run Flake8 (style/lint check)
-        run: flake8 . --max-line-length=100 --statistics
+        run: flake8 . --max-line-length=100 --statistics --exclude=venv,.venv,_pycache_
 
   # ---------------------------------------------------------------------------
   # GATE 2: Secret Scanning — Poka-Yoke against exactly what caused the incident
